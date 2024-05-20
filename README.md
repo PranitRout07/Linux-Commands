@@ -47,6 +47,30 @@ top
 ```
 
 
+8. Increase CPU load
+
+```
+while true; do uptime; sleep 2; done
+```
+
+9. To see the background jobs running
+
+ ```
+ jobs
+ ```
+10. Kill a background job
+
+```
+sudo kill <pid>
+```
+11. See all the processes running
+
+```
+ps -ef
+```
+
+
+
 
 
 
