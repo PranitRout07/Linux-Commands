@@ -69,9 +69,25 @@ sudo kill <pid>
 ps -ef
 ```
 
+12. Change user permission
 
+```
+chown
+```
 
+13. Heavy task to increase cpu stats 
+```
+for i $(seq 1 100000000000000); do print $i; done 
+```
+14. Heavy compress 
+```
+dd if=/dev/urandom of=/dev/null bs=1024k count=10000 
+```
+15. Add a user
 
+```
+sudo useradd 
+```
 
 
 
