@@ -89,6 +89,19 @@ dd if=/dev/urandom of=/dev/null bs=1024k count=10000
 sudo useradd 
 ```
 
+16. Remove caches (carefuly use this command as sometimes some systems need cache to run correctly )
+```
+echo 3 > /proc/sys/vm/drop_caches
+```
+17. Generate high memory loads .(use the command 
+
+```
+stress m -6
+```
+
+    
+
+
 
 
 
