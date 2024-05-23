@@ -98,7 +98,20 @@ echo 3 > /proc/sys/vm/drop_caches
 ```
 stress m -6
 ```
+18. All used space in /Root partition
+```
+df -h
+```
+19. All the processes running inside the current directory .
 
+```
+lsof .
+```
+
+20.Long listing of /root , /tmp , /etc/shadow ,etc/password , /etc/ssh/ssh_config
+```
+ls -ld /root /tmp /etc/shadow /etc/passwd /etc/ssh/ssh_config
+```
     
 
 
