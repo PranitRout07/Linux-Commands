@@ -113,9 +113,30 @@ lsof .
 ls -ld /root /tmp /etc/shadow /etc/passwd /etc/ssh/ssh_config
 ```
     
+21. Number of disks
 
+```
+sudo fdisk -l
+```
+22. Check number of disk partitions
+```
+sudo fdisk -l | grep -i sd
+```
 
+```
+lsblk
+```
+23. Check file system on the partitions
 
+```
+lsblk -f
+```
+
+24. Check partitions not mounted for filesystem types
+
+```
+mount | wc -l
+```
 
 
 
