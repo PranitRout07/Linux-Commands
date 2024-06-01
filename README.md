@@ -139,8 +139,24 @@ mount | wc -l
 ```
 
 
+25. All system details .
+Here you can install neofetch then use the command to see the system details .
+```
+sudo apt install neofetch
+```
+After installation run this 
+```
+neofetch
+```
+26. Do math operation in terminal .
 
-
+```
+sudo apt install bc
+```
+Now write like this to do math operation 
+```
+echo "78*89" | bc
+```
 
 
 
