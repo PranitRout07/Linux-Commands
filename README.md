@@ -157,6 +157,45 @@ Now write like this to do math operation
 ```
 echo "78*89" | bc
 ```
+# User Account Management
+
+1. Add a user
+```
+useradd -g <group-name> -s /bin/bash -c <"description"> -m -d /home/<username> <username>
+```
+2. Check whether user is created or not.
+```
+id <username>
+```
+3. Delete a user
+```
+userdel <username>
+```
+4. Modify a user.
+```
+usermod -G <group-name> <username>
+```
+Change the default group name
+```
+usermod -g <group-name> <username> 
+```
+```
+Other flags we can use for modification are
+-m -d <new-directory>
+-p <new-password>
+-s <shell-type>
+-L <lock>
+-U <unlock>
+```
+5. Create a group
+```
+groupadd <group-name>
+```
+6. Delete group
+```
+groupdel <group-name>
+```
+
 
 
 
