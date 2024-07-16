@@ -196,10 +196,101 @@ groupadd <group-name>
 groupdel <group-name>
 ```
 
+# Networking Commands
+1. Check data transfering properly or not .This checks two parts : whether your internet is working or not and the server side is serving properly or not .
+```
+ping <ip or domain name>
+```
+2. Shows the network statistics. For example you can see all the active connections .
+```
+netstat
+```
+3. All the network interfaces . For example if you have installed docker, then by default docker creates a isolated network . You can see this after using ifconfig. Here you can see ipv4 and ipv6 addresses of each interface.
+```
+ifconfig
+```
+4. Suppose you are searching youtube.com , it does not directly goes to request the youtube.com server . The request travels through various servers by hopping from server to another . The entire path is shown through traceroute .
+```
+traceroute <domain name>
+```
+5. Check your network latency .
+```
+tracepath <domain name>
+```
+6. Ping and tracepath at the same time.
+```
+mtr <domain name>
+```
+7. Shows whether the website is active or not . It gives all information like server address .
+```
+nslookup <domain name>
+```
+8. Check by connection on a particular port for a domain.
+```
+telnet <domain name> <port>
+```
+9. Show the current machine ip.
+```
+hostname
+```
+10. Edit hostname and add a custom ip and hostname mapping . Change it in the file /etc/hosts.
+```
+cd /etc/hosts
+```
+11. Shows all the ip adresses .
+```
+ip address
+```
+12. Shows all the wireless connections.
+```
+iwconfig
+```
+13. Same function as netstat command .
+```
+ss
+```
+14. Show where a particular website is hosted
+```
+dig <domain name>
+```
+15. Shows all the details of a particular domain name like fro  where you have bought it , on which date you have bought this domain name and who is the registar .
+```
+whois <domain name> 
+```
+16. Shows the MAC address.
+```
+arp
+```
+17. Shows which network interface are working .
+```
+ifplugstatus
+```
+18. Hit api endpoints .
+```
+curl -X GET <api-endpint> {This is get , other option like POST is also available}
+```
+But after running the above command you will see the output is in very format(not readable). To make it more readable you can install 'jq' . 
+```
+curl -X GET <api-endpint> | jq
+```
+19. Download anything from internet .
+```
+wget <link>
+```
+20. Continuously runs a command every two second.
+```
+watch <any command>
+for example:
+watch top
+You can also control the number of seconds also.
 
-
-
-
-
-
-
+watch -n <time> <command>
+```
+21.  Scan the domain name and it shows which ports are open .
+```
+nmap <domain name>
+```
+22. Shows all the routes .
+```
+route
+```
