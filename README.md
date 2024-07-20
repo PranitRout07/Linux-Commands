@@ -294,3 +294,22 @@ nmap <domain name>
 ```
 route
 ```
+
+# Password Management
+1. Password management can be done by using `chase` command or by changing the file `/etc/login.def`
+```
+chase [-m minimum day] [-M maxdays] [-d last day] [-I inactive] [-E expiredate] [-w warndays] <username>
+```
+2. Show details of username and password.
+```
+grep <username> /etc/shadow
+```
+3. Now using /etc/login.def
+
+```
+Following fields you can modify:
+1) PASS_MAX_DAYS
+2) PASS_MIN_DAYS
+3) PASS_MIN_LEN
+4) PASS_WARN_AGE
+```
