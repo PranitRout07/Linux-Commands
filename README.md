@@ -195,6 +195,15 @@ groupadd <group-name>
 ```
 groupdel <group-name>
 ```
+7. Add a user to root group
+```
+sudo usermod -aG root <username>
+
+```
+8. Verify group of a user .
+```
+groups <username>
+```
 
 # Networking Commands
 1. Check data transfering properly or not .This checks two parts : whether your internet is working or not and the server side is serving properly or not .
