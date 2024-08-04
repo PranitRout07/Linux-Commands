@@ -157,6 +157,18 @@ Now write like this to do math operation
 ```
 echo "78*89" | bc
 ```
+27. Watch continuosly the cpu
+```
+watch -n 1 "top -bn1 | grep 'Cpu(s)'"
+
+```
+28. Watch continuosly the memory
+```
+watch -n 1 "free -m"
+
+```
+
+29. 
 # User Account Management
 
 1. Add a user
