@@ -334,3 +334,35 @@ Following fields you can modify:
 3) PASS_MIN_LEN
 4) PASS_WARN_AGE
 ```
+
+1. Check port used or not
+   ```
+   lsof -i :<port>
+   ```
+2. Make a alias of command.
+```
+alias <new-short-alias>='<command>'
+```
+Example
+```
+alias f='docker ps'
+```
+3. Count lines,characters and words.
+   ```
+   wc -l (lines)
+   wc -c (characters)
+   wc -w (words)
+   ```
+4. Regex
+   ```
+   grep <pattern> <file>
+   ```
+5. Run a task on background rather than on terminal.
+```
+<command> & (for e.g. sleep 1000 &)
+```
+6. List down jobs running
+```
+jobs
+```
+7. /dev/null acts a black hole.Anything you send here will never found.
