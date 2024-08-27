@@ -366,3 +366,30 @@ alias f='docker ps'
 jobs
 ```
 7. /dev/null acts a black hole.Anything you send here will never found.
+
+# AWKCommand
+1. Print a particular column
+```
+awk '{print $1}' <filename>
+awk '{print $1,$2}' <filename> (multiple columns)
+```
+2. Search a text from a file
+```
+awk '/<keyword>/' <filename>
+```
+3. Search a particular text and select a particular column
+```
+awk '/<keywor>/{print $<col-num>}' <filename>
+```
+4. Print a line starting with a partiicular character
+```
+awk '/^<character>/' <filename>
+```
+5. Print a line ending with a particular character
+```
+awk '/<character>/$' <filename>
+```
+6. Compare value of a particular column and then print .
+```
+awk '$1 <  100 { print $0 }' <filename>
+```
